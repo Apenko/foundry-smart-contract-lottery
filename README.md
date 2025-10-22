@@ -101,15 +101,16 @@ Run with Detailed Logs
 forge test -vvvv
 Run Integration Tests Only
 forge test --match-contract InteractionsTest -vvvv
+```
 
-All tests include:
+### All tests include:
 Player entry validation
 VRF request & fulfillment simulation
 Winner payout and raffle reset checks
 Event emission & revert condition testing
 Fuzz and lifecycle consistency verification
 
-🧰 Development Commands
+### 🧰 Development Commands
 Start Local Anvil Node
 make anvil
 Deploy Locally
@@ -121,46 +122,49 @@ make createSubscription
 make fundSubscription
 make addConsumer
 
-🧾 Configuration
+## 🧾 Configuration
+```bash
 .env Example
 SEPOLIA_RPC_URL=https://eth-sepolia.g.alchemy.com/v2/your-api-key
 PRIVATE_KEY=your-private-key
 ETHERSCAN_API_KEY=your-etherscan-api-key
+```
 
-foundry.toml
+### foundry.toml
+```bash
 Defines remappings and build settings:
 toml
 [profile.default]
 src = "src"
 out = "out"
 libs = ["lib"]
-
 remappings = [
   '@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/',
   '@solmate=lib/solmate/src/'
 ]
+```
 
-🧠 Key Learnings
+### 🧠 Key Learnings
 Building VRF-based smart contracts using Foundry.
 Managing on-chain randomness and automated upkeep cycles.
 Structuring Foundry projects with scripts, mocks, and Makefiles.
 Implementing fuzz, event, and integration testing.
 Creating reusable Foundry templates for Chainlink-based dApps.
 
-💡 Future Improvements
+#### 💡 Future Improvements
 Add front-end integration (Next.js + Wagmi + RainbowKit)
 Implement Chainlink Automation for live upkeep
 Enable multi-winner and reward-tier logic
 Add Chainlink Automation tests on Sepolia
 
-🧑‍💻 Author
+#### 🧑‍💻 Author
 Ezenwanne Ikechukwu Solomon (Apenko)
 📧 ezenwanneikechukwu2@gmail.com
 🌐 linkedin.com/in/ikechukwu-ezenwanne-880a80345
 🐦 @Apenko2
 💻 github.com/Apenko
 
-🪙 License
+### 🪙 License
 This project is licensed under the MIT License.
 
-⭐ If you like this project, give it a star on GitHub!
+### ⭐ If you like this project, give it a star on GitHub!
