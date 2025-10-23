@@ -160,8 +160,8 @@ Add Chainlink Automation tests on Sepolia
 #### 🧑‍💻 Author
 Ezenwanne Ikechukwu Solomon (Apenko)
 📧 ezenwanneikechukwu2@gmail.com
-🌐 linkedin.com/in/ikechukwu-ezenwanne-880a80345
-🐦 @Apenko2
+🌐 linkedin.com/in/ezenwanne-ikechukwu-solomon-880a80345
+🐦X-twitter: @Apenko2
 💻 github.com/Apenko
 
 ### 🪙 License
